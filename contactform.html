@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conatctform.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <fieldset>
+            <h1> <u>Contact Form</u></h1>
+        </fieldset>
+            <h2>Please fill in your information and we'll be contacting you soon!</h2>
+            <hr>
+            <h4>Mandatory fields are marked with *</h4>
+            <p>Your Name : * <input type="text" name="name" placeholder="Your full name" required> </p>
+        <fieldset>
+            <legend>Gender*</legend>
+            <p>
+                Male<input type="radio" name="gender" id="male" required>
+                Female <input type="radio" name="gender" id="female" required>
+            </p>
+        </fieldset>
+        <p>Your Contact Number :* <input type="tel" name="number" required placeholder="1234567890"> </p>
+        <p>Your Email : <input type="email" name="email" id="email"  placeholder="abc@example.com"> </p>
+        <p>Address :<textarea name="address"  id="" cols="100" rows="7" placeholder="Enter your address..."></textarea> </p>
+        <p>Message Subject : * 
+            <select name="subject" id="">
+                <option value="--Select a Subject--">--Select a Subject--</option>
+                <option value="Job Enquiry">Job Enquiry</option>
+                <option value="Complaint">Complaint</option>
+                <option value="Other">Other</option>
+            </select>     
+        </p>
+        <p>
+            Message : * <textarea name="message" id="" cols="100" rows="7" required placeholder="Your message to us"></textarea>
+        </p>
+        <p class="main">I agree to the <a href="">Terms and Conditions</a><input type="checkbox" name="check" required></p>
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
